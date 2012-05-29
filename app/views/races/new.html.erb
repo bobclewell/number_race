@@ -1,8 +1,8 @@
-<h1>New Race</h1>
+<h1>Random Number Racer</h1>
 
 <h2>Let's see what number randomly appears the most. First to 10 is the winner.</h2>
 <%= form_for @race do |f| %>
 
-  <%= f.submit "Start!" %>
+  <%= f.submit "Start!", :class => 'btn start-btn' %>
 
 <% end %>

@@ -1,3 +1,5 @@
+var winner = "<span class=winner>Winner!</span>"
+
 $('#one-count').text("<%= @one_frequency %>");
 $('#two-count').text("<%= @two_frequency %>");
 $('#three-count').text("<%= @three_frequency %>");
@@ -8,3 +10,43 @@ $('#seven-count').text("<%= @seven_frequency %>");
 $('#eight-count').text("<%= @eight_frequency %>");
 $('#nine-count').text("<%= @nine_frequency %>");
 $('#ten-count').text("<%= @ten_frequency %>");
+
+if (<%= @one_frequency %> == 10) {
+  $('#one-count').append(winner);
+}
+
+if (<%= @two_frequency %> == 10) {
+  $('#two-count').append(winner);
+}
+
+if (<%= @three_frequency %> == 10) {
+  $('#three-count').append(winner);
+}
+
+if (<%= @four_frequency %> == 10) {
+  $('#four-count').append(winner);
+}
+
+if (<%= @five_frequency %> == 10) {
+  $('#five-count').append(winner);
+}
+
+if (<%= @six_frequency %> == 10) {
+  $('#six-count').append(winner);
+}
+
+if (<%= @seven_frequency %> == 10) {
+  $('#seven-count').append(winner);
+}
+
+if (<%= @eight_frequency %> == 10) {
+  $('#eight-count').append(winner);
+}
+
+if (<%= @nine_frequency %> == 10) {
+  $('#nine-count').append(winner);
+}
+
+if (<%= @ten_frequency %> == 10) {
+  $('#ten-count').append(winner);
+}

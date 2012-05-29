@@ -1,4 +1,6 @@
 NumberRace::Application.routes.draw do
+  root to: 'races#new'
+
   resources :numbers
 
   resources :races

@@ -1,3 +1,68 @@
 // Place all the styles related to the Races controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$top_btn_color: #4D74F1;
+$bottom_btn_color: #234DD4;
+
+body {
+  background: #18193B;
+  font-family: Arial;
+}
+
+h1, h2 {
+  color: #fff;
+  margin: 0 100px;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+#race-container {
+  background: #fff;
+  border: 1px solid #444;
+  margin: 0 100px;
+  padding: 14px 28px;
+}
+
+.row {
+  margin: 6px 3px;
+}
+
+.winner {
+  color: red;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 6px;
+}
+
+.btn {
+  border: none;
+  border: 1px solid #00218D;
+  background-color: $bottom_btn_color;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($top_btn_color), to($bottom_btn_color));
+  background-image: -webkit-linear-gradient(top, $top_btn_color, $bottom_btn_color);
+  background-image:    -moz-linear-gradient(top, $top_btn_color, $bottom_btn_color);
+  background-image:     -ms-linear-gradient(top, $top_btn_color, $bottom_btn_color);
+  background-image:      -o-linear-gradient(top, $top_btn_color, $bottom_btn_color);
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #F7F7F7;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 16px 0 0 0;
+  padding: 5px 8px;
+  text-decoration: none;
+  &:hover {
+    background-color: #032594;
+  }
+}
+
+.start-btn {
+  font-size: 3.1em;
+  margin: 40px 0 0 150px;
+  padding: 5px 26px;
+}
