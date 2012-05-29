@@ -1,0 +1,16 @@
+<h1>Race (Show)</h1>
+
+<div id="race-container" data-race-id="<%= params[:id] %>">
+    <div class="row">Ones: <span id="one-count"><%= @one_frequency %></span></div>
+    <div class="row">Twos: <span id="two-count"><%= @two_frequency %></span></div>
+    <div class="row">Threes: <span id="three-count"><%= @three_frequency %></span></div>
+    <div class="row">Fours: <span id="four-count"><%= @four_frequency %></span></div>
+    <div class="row">Fives: <span id="five-count"><%= @five_frequency %></span></div>
+    <div class="row">Sixes: <span id="six-count"><%= @six_frequency %></span></div>
+    <div class="row">Sevens: <span id="seven-count"><%= @seven_frequency %></span></div>
+    <div class="row">Eights: <span id="eight-count"><%= @eight_frequency %></span></div>
+    <div class="row">Nines: <span id="nine-count"><%= @nine_frequency %></span></div>
+    <div class="row">Tens: <span id="ten-count"><%= @ten_frequency %></span></div>
+</div>
+
+<%= link_to "New Race", new_race_path %>
