@@ -38,6 +38,7 @@ gem 'jquery-rails'
 
 # For background jobs
 gem 'resque'
+gem "yajl-ruby", "~> 1.1.0"
 
 group :development, :test do
   gem 'rspec-rails'
